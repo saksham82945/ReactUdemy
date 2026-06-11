@@ -1,0 +1,45 @@
+<!-- Declares the document type and version of HTML (HTML5) -->
+<!DOCTYPE html>
+<!-- The root element of an HTML page, setting the language to English -->
+<html lang="en">
+<!-- Contains meta-information about the HTML document, not displayed to the user -->
+<head>
+    <!-- Specifies the character encoding for the HTML document (UTF-8 supports most characters) -->
+    <meta charset="UTF-8">
+    <!-- Sets the viewport to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to an external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- Sets the title of the document, shown in the browser's title bar or tab -->
+    <title>Document</title>
+</head>
+<!-- Contains the visible content of the HTML document -->
+<body>
+    <!-- A container div with id="root". This is where our React application will be injected and rendered -->
+    <div id="root"></div>
+    <!-- A heading element indicating that React content usually goes inside the root element -->
+    <h1> react is only work in root id </h1> 
+    
+    <!-- The following is a commented-out standard JavaScript code example -->
+    <!-- <script>
+        // Creates a new 'h2' HTML element
+        const heading = document.createElement("h2");
+        // Sets the inner HTML content of the created 'h2' element
+        heading.innerHTML = "Hello World from JAvascript ";
+
+        // Finds the element with id "root" in the HTML document
+        const root = document.getElementById("root");
+        // Appends the created 'h2' heading inside the "root" element
+        root.appendChild(heading);
+   </script> -->
+
+    <!-- Imports the core React library from a CDN (Content Delivery Network). This gives us access to React object APIs -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- Imports the ReactDOM library from a CDN. This allows React to interact with the DOM (e.g., ReactDOM.createRoot) -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+
+    <!-- Includes our custom JavaScript file where our React code resides -->
+    <script src=" ./App.js"></script>
+
+</body>
+</html>
